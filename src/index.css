@@ -1,0 +1,83 @@
+@font-face {
+  font-family: 'JollyLodger';
+  src: url('../public/fonts/JollyLodger-Regular.ttf') format('truetype');
+}
+
+*{
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  margin: 0;
+  font-family: "JollyLodger", sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  background-color: rgba(30, 25, 44, 0.26);
+  background-image: url('./images/bg-main.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  width: 100%;
+  height: 100vh;
+  overflow: auto;
+}
+
+
+.map-bg {
+  width: 100%;
+  height: 100vh;
+  background-image: linear-gradient(180deg, rgba(61, 63, 132, 0.207) 0%, rgba(28, 23, 18, 0.568) 100%), url('./images/bg-map-1.png');
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: contain;
+}
+
+
+.center-container {
+  height: 70vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.logo-container h1 {
+  color: #FFD874;
+  text-shadow: 0px 12px 32px rgba(255, 216, 116, 0.40);
+  font-size: 132px;
+  font-weight: 400;
+  margin-bottom: 60px;
+  -webkit-text-stroke-width: 4px;
+  -webkit-text-stroke-color: #000;
+  text-stroke-width: 4px; /* Add vendor-specific prefixes if needed */
+  text-stroke-color: #000; /* Add vendor-specific prefixes if needed */
+}
+
+
+.btn {
+  display: flex;
+  width: 338px;
+  height: 80px;
+  padding: 10px 32px;
+  justify-content: center;
+  align-items: center;
+  border-radius: 12px;
+  background: #596FE9;
+  color: #FFF;
+  text-shadow: 0px 2px 0.5px rgba(23, 23, 23, 0.40);
+  font-family: "JollyLodger";
+  font-size: 64px;
+  font-style: normal;
+  font-weight: 400;
+  cursor: pointer;
+}
+
+.btn:hover{
+  transform: scale(1.03);
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}

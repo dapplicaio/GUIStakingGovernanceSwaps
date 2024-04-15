@@ -1,0 +1,199 @@
+.workplaces {
+    color: #ffffff;
+
+    &_container {
+        display: flex;
+        gap: 10px;
+        justify-content: space-between;
+    }
+
+    &-farmitem-left {
+        width: 464px;
+        height: calc(100vh - 69px);
+        border-radius: 0px 0px 0px 2px;
+        background: rgba(12, 7, 4, 0.24);
+
+        &_container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            height: 100%;
+            gap: 120px;
+
+            .kitchen-block {
+                img {
+                    width: 75%;
+                    &:hover {
+                        background-image: url('../../images/farm_items/kitchen/kitchen_for_food_hover.png');
+                        background-size: contain;
+                        background-repeat: no-repeat;
+                        cursor: pointer;
+                    }
+                }
+            }
+
+            .stone-block {
+                img {
+                    width: 75%;
+                    &:hover {
+                        background-image: url('../../images/farm_items/stone/stone_quarry_hover.png');
+                        background-size: contain;
+                        background-repeat: no-repeat;
+                        cursor: pointer;
+                    }
+                }
+            }
+        }
+    }
+
+    &-center {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        align-items: center;
+        justify-content: flex-end;
+
+        &-block {
+            width: 936px;
+            height: 624px;
+            border-radius: 8px;
+            background: rgba(15, 15, 15, 1);
+
+            &_container {
+                height: 100%;
+                padding: 25px 8px 5px 8px;
+
+                h2{
+                    font-family: serif;
+                }
+            }
+
+            .workplaces-top {
+                display: flex;
+                align-items: center;
+                justify-content: space-around;
+                height: 44px;
+                margin-bottom: 25px;
+
+                .time-to-claim {
+                    display: flex;
+                    align-items: center;
+                    gap: 8px;
+                    font-size: 20px;
+                    font-family: Inter;
+                    font-weight: 400;
+
+                    span {
+                        font-weight: 700;
+                    }
+                }
+
+                .claim-block {
+                    display: flex;
+                    align-items: center;
+                    gap: 20px;
+
+                    &_resource {
+                        display: flex;
+                        align-items: flex-end;
+                        gap: 8px;
+                        font-size: 22px;
+                    }
+
+                    &_btn {
+                        width: 113px;
+                        height: 44px;
+                        padding: 0 30px;
+                        border-radius: 12px;
+                        font-size: 32px;
+                        font-family: "JollyLodger", sans-serif;
+                        color: #ffffff;
+                        background: rgba(41, 148, 84, 1);
+                        border: none;
+                        cursor: pointer;
+                        transition: all .1s ease;
+
+                        &:hover {
+                            background: rgb(39, 177, 94);
+                        }
+                    }
+                }
+            }
+
+            .workplaces-items-list {
+                display: flex;
+                justify-content: center;
+                gap: 12px;
+            }
+        }
+    }
+
+    &-farmitem-right {
+        width: 464px;
+        height: calc(100vh - 69px);
+        border-radius: 0px 0px 0px 2px;
+        background: rgba(12, 7, 4, 0.24);
+
+        &_container {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            height: 100%;
+            gap: 120px;
+
+            .lumber-block {
+                img {
+                    width: 75%;
+                    &:hover {
+                        background-image: url('../../images/farm_items/lember/lumber_hover.png');
+                        background-size: contain;
+                        background-repeat: no-repeat;
+                        cursor: pointer;
+                    }
+                }
+            }
+
+            .gems-block {
+                img {
+                    width: 75%;
+                    &:hover {
+                        background-image: url('../../images/farm_items/crystal/crystal_wll_hover.png');
+                        background-size: contain;
+                        background-repeat: no-repeat;
+                        cursor: pointer;
+                    }
+                }
+            }
+        }
+    }
+
+    .leaderboard{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 600px;
+        height: 70px;
+        background: rgba(12, 7, 4, 0.24);
+
+        &_container{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 10px;
+            padding: 5px 15px;
+            border: 2px solid #FFD874;
+            cursor: pointer;    
+
+            img{
+                width: 35px;
+                height: 35px;
+            }
+
+            a{
+                font-size: 32px;
+                color: #ffffff;
+                text-decoration: none;
+            }
+        }
+    }
+}

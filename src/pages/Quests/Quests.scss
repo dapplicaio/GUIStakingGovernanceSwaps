@@ -1,0 +1,141 @@
+.quests{
+    color: #ffffff;
+    
+    &_container{
+        display: flex;
+        gap: 10px;
+        justify-content: center;
+        height: calc(100vh - 69px);
+    }
+
+    &-center{
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        align-items: center;
+        justify-content: center;
+    
+        &-block{
+            width: 1190px;
+            height: 624px;
+            border-radius: 8px;
+            background: rgba(15, 15, 15, 1);
+
+            .quests-center-top{
+                max-width: 100%;
+                height: 74px;
+                padding: 0px 24px;
+                background: rgba(25, 21, 24, 1);
+                display: flex;
+                align-items: center;
+                margin-bottom: 15px;
+                gap: 20px;
+
+                select{
+                    padding: 8px 12px 8px 16px;
+                    border: 1px;
+                    border: 1px solid rgba(89, 111, 233, 0.75);
+                    background-color: transparent;
+                    color: #ffffff;
+
+                    option{
+                        background: rgba(25, 21, 24, 1);  
+                        border: 1px solid rgba(89, 111, 233, 0.75);
+                    }
+                }
+            }
+
+            .quests-list{
+                display: flex;
+                flex-direction: column;
+                overflow-y: auto;
+                gap: 8px;
+                padding: 0 24px;
+                height: 80%;
+
+                .quests-item{
+                    width: 1100px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    background: #2C2C2C;
+                    border-radius: 4px;
+                    padding: 20px;
+                    font-family: sans-serif;
+                    text-align: left;
+
+                    .quest-number{
+                        width: 25px;
+                    }
+
+                    .quest-type{
+                        width: 110px;
+                        color: #95A5FF;
+                        font-style: italic;
+                    }
+
+                    .quest-info{
+                        width: 300px;
+                        font-weight: 700;
+                    }
+
+                    .quest-loader-block{
+                        display: flex;
+                        justify-content: center;
+                        gap: 10px;
+                        align-items: center;
+                        .quest-loader{
+                            width: 400px;
+                            height: 20px;
+                            background: #0F0F0F;
+    
+                            span{
+                                display: block;
+                                width: 0px;
+                                height: 100%;
+                                background: #95A5FF;
+                            }
+
+
+                        }
+                        
+                        p{
+                            width: 50px;
+                        }
+                    }
+
+                    .reward-block{
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        width: 180px;
+
+                        button{
+                            padding: 10px 8px 10px 8px;
+                            background: #299454;
+                            color: #ffffff;
+                            font-weight: 700;
+                            font-size: 16px;
+                            border-radius: 12px;
+                            border: none;
+                            cursor: pointer;
+                            transition: all .1s ease;
+                
+                            &:hover {
+                                background: rgb(39, 177, 94);
+                            }
+                        }
+                    }
+
+                    .reward-block.claimed{
+                        display: flex;
+                        align-items: center;
+                        gap: 10px;
+                    }
+                }
+
+            }
+        }
+    }
+
+}

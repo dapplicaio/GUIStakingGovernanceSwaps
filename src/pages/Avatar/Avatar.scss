@@ -1,0 +1,234 @@
+.avatar {
+    color: #ffffff;
+
+    &_container {
+        display: flex;
+        gap: 10px;
+        justify-content: center;
+        height: calc(100vh - 69px);
+    }
+
+    &-center {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        align-items: center;
+        justify-content: center;
+
+        &-block {
+            width: 1182px;
+            height: 624px;
+            border-radius: 8px;
+            background: rgba(15, 15, 15, 1);
+
+            .container {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                padding: 40px;
+            }
+        }
+    }
+
+    &-left {
+        width: 300px;
+        height: 500px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        flex-direction: column;
+        font-weight: 400;
+
+        .title {
+            margin-bottom: 30px;
+
+            h3 {
+                font-size: 32px;
+            }
+
+            p {
+                font-family: sans-serif;
+                font-size: 18px;
+            }
+        }
+
+        .avatar-img {
+            width: 238px;
+            height: 282px;
+
+            img {
+                width: 100%;
+                height: 100%;
+            }
+        }
+
+        .characteristic {
+            margin-top: 20px;
+            font-family: sans-serif;
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 40px;
+            display: flex;
+
+
+            .char-item {
+                display: flex;
+                gap: 5px;
+                margin: 10px;
+            }
+        }
+
+        .avatar-change {
+            margin-top: 20px;
+
+            button {
+                padding: 2px 32px;
+                border-radius: 12px;
+                font-size: 32px;
+                font-family: "JollyLodger", sans-serif;
+                color: #ffffff;
+                background: rgba(41, 148, 84, 1);
+                border: none;
+                cursor: pointer;
+                transition: all .1s ease;
+
+                &:hover {
+                    background: rgb(39, 177, 94);
+                }
+            }
+        }
+    }
+
+    &-right {
+        width: 700px;
+        height: 450px;
+        display: flex;
+        flex-wrap: wrap;
+
+
+        &-item {
+            margin: 12px;
+            width: 325px;
+            height: 232px;
+            border-radius: 8px;
+            display: flex;
+
+            .item-block {
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+                padding: 10px;
+
+
+
+                &-img {
+                    display: flex;
+                    align-items: center;
+                    justify-content: center;
+                    width: 148px;
+                    height: 148px;
+                    border-radius: 12px;
+                    background: #282226;
+                }
+
+                &-action {
+                    button.unequip {
+                        padding: 2px 32px;
+                        border-radius: 12px;
+                        font-size: 32px;
+                        font-family: "JollyLodger", sans-serif;
+                        color: #ffffff;
+                        background: #A03730;
+                        border: none;
+                        cursor: pointer;
+                        transition: all .1s ease;
+
+                        &:hover {
+                            background: #b94139;
+
+                        }
+                    }
+
+                    button.equip {
+                        padding: 2px 32px;
+                        border-radius: 12px;
+                        font-size: 32px;
+                        font-family: "JollyLodger", sans-serif;
+                        color: #ffffff;
+                        background: rgba(41, 148, 84, 1);
+                        border: none;
+                        cursor: pointer;
+                        transition: all .1s ease;
+
+                        &:hover {
+                            background: rgb(39, 177, 94);
+                        }
+                    }
+                }
+            }
+
+            .item-info {
+                font-family: sans-serif;
+                padding: 10px;
+                display: flex;
+                flex-direction: column;
+                justify-content: flex-start;
+                text-align: left;
+
+                &-name {
+                    p {
+                        font-size: 18px;
+                        font-weight: 700;
+                    }
+                }
+
+                &-char {
+                    margin-top: 10px;
+                    display: flex;
+                    flex-direction: column;
+                    gap: 10px;
+
+                    p {
+                        font-size: 18px;
+                        font-weight: 400;
+                    }
+                }
+            }
+
+        }
+
+        &-item.equip {
+            background: transparent;
+        }
+
+        &-item.unequip {
+            background: #000000;
+        }
+    }
+
+
+    .add-avatar-block-action {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 100%;
+
+        button {
+            padding: 2px 32px;
+            border-radius: 12px;
+            font-size: 32px;
+            font-family: "JollyLodger", sans-serif;
+            color: #ffffff;
+            background: rgba(41, 148, 84, 1);
+            border: none;
+            cursor: pointer;
+            transition: all .1s ease;
+
+            &:hover {
+                background: rgb(39, 177, 94);
+            }
+        }
+    }
+
+}

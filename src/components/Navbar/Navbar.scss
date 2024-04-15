@@ -1,0 +1,92 @@
+.nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 14px 58px;
+    color: #ffffff;
+    position: relative;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+}
+
+.logo-p{
+    text-align: left;
+    color: #FFD874;
+    font-family: "JollyLodger";
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    letter-spacing: 0.72px;
+    cursor: pointer;
+}
+
+.farm-items{
+    display: flex;
+    gap: 342px;
+}
+
+.farm-items-left, .farm-items-right{
+    display: flex;
+    align-items: center;
+    gap: 56px;
+}
+
+.hero-img{
+    position: absolute;
+    top: 0;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.stone, .wood, .food, .gems{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+
+    color: #FFF;
+    font-family: Inter;
+    font-size: 22px;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.user{
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: #FFF;
+    font-family: Inter;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: normal;
+}
+
+
+@media screen and (max-width: 1699px) {
+
+    .hero-img{
+        left: 51%;
+    }
+
+    .hero-img img{
+       width: 60%;
+    }
+}
+
+@media screen and (max-width: 1499px) {
+    .farm-items{
+        gap: 240px;
+    }
+
+    .hero-img{
+        left: 51%;
+    }
+
+    .hero-img img{
+       width: 60%;
+    }
+}

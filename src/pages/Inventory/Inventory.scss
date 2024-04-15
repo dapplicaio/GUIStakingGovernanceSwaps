@@ -1,0 +1,162 @@
+.inventory{
+    color: #ffffff;
+ 
+    &_container{
+        display: flex;
+        gap: 10px;
+        justify-content: center;
+        height: calc(100vh - 69px);
+    }
+
+    &-farmitem-left{
+        width: 464px;
+        height: calc(100vh - 69px);
+        border-radius: 0px 0px 0px 2px;
+        background: rgba(12, 7, 4, 0.24);
+    }
+
+    &-center{
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        align-items: center;
+        justify-content: center;
+    
+        &-block{
+            width: 936px;
+            height: 624px;
+            border-radius: 8px;
+            background: rgba(15, 15, 15, 1);
+
+            .inventory-top{
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                height: 74px;
+                background: rgba(25, 21, 24, 1);
+                padding: 0 72px;
+
+                &-stake-unstake{
+                    display: flex;
+                    gap: 20px;
+                    font-size: 28px;
+
+                    p{
+                        cursor: pointer;
+                    }
+
+                    .active{
+                        color: rgba(100, 241, 156, 1);
+                        text-decoration: underline;
+                    }
+
+                    .cansel{
+                        font-family: serif;
+                        font-size: 18px;
+                    }
+                }
+
+                &-stake-block{
+                    display: flex;
+                    align-items: center;
+                    gap: 15px;
+
+                    .stake-block_info{
+                        font-size: 18px;
+                        font-family: sans-serif;
+
+
+                        .recipe{
+                            display: flex;
+                            align-items: center;
+                            gap: 10px;
+                            font-size: 18px;
+
+
+                            .r-1{
+                                display: flex;
+                                align-items: center;
+                                gap: 8px;
+
+                                &_border{
+                                    width: 20px;
+                                    height: 20px;
+                                    border: 1px solid orange;
+                                    
+                                    &.selected{
+                                        background: green;
+                                        border: 1px solid green;
+                                    }
+                                }
+                            }
+
+                            .r-2{
+                                display: flex;
+                                align-items: center;
+                                gap: 8px;
+
+                                &_border{
+                                    width: 20px;
+                                    height: 20px;
+                                    border: 1px solid orange;
+                                }
+                            }
+                        }
+                    }
+
+                    .stake-block_btn{
+                        padding: 2px 30px;
+                        border-radius: 12px;
+                        font-size: 32px;
+                        font-family: "JollyLodger", sans-serif;
+                        color: #ffffff;
+                        background: rgba(41, 148, 84, 1);
+                        border: none;
+                        cursor: pointer;
+                        transition: all .1s ease;
+
+                        &:hover {
+                            background: rgb(39, 177, 94);
+                        }
+                    }
+
+                    .stake-block_btn.upgrade{
+                      
+                        padding: 2px 30px;
+                        font-size: 32px;
+                        font-family: "JollyLodger", sans-serif;
+                        color: #ffffff;
+                        background: rgba(41, 148, 84, 1);
+                        border: none;
+                        cursor: pointer;
+                        transition: all .1s ease;
+
+                        &:hover {
+                            background: rgb(39, 177, 94);
+                        }
+                    }
+                }
+            }
+
+            &_items_list{
+                display: flex;
+                flex-wrap: wrap;
+                gap: 10px;
+                height: 77%;
+                overflow-y: auto;
+                padding: 0px 50px;
+                margin: 10px 0;
+
+                
+             
+            }
+        }
+    }
+
+    &-farmitem-right{
+        width: 464px;
+        height: calc(100vh - 69px);
+        border-radius: 0px 0px 0px 2px;
+        background: rgba(12, 7, 4, 0.24);
+    }
+}

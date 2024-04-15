@@ -1,0 +1,354 @@
+.voting {
+    color: #ffffff;
+
+    &_container {
+        display: flex;
+        gap: 10px;
+        justify-content: center;
+        height: calc(100vh - 69px);
+    }
+
+    &-center {
+        display: flex;
+        flex-direction: column;
+        gap: 15px;
+        align-items: center;
+        justify-content: center;
+
+        &-block {
+            width: 1180px;
+            height: 600px;
+            border-radius: 8px;
+            background: #0F0F0F;
+
+            .voting-top {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                height: 74px;
+                background: rgba(25, 21, 24, 1);
+                padding: 0 72px;
+
+                &-automatic-general {
+                    display: flex;
+                    gap: 20px;
+                    font-size: 28px;
+
+                    p {
+                        cursor: pointer;
+                    }
+
+                    .active {
+                        color: #95A5FF;
+                        text-decoration: underline;
+
+                    }
+
+                    .cansel {
+                        font-family: serif;
+                        font-size: 18px;
+                    }
+                }
+
+                &-stake-block {
+                    display: flex;
+                    align-items: center;
+                    gap: 15px;
+
+                    .stake-block_info {
+                        font-size: 18px;
+                        font-family: sans-serif;
+                    }
+
+                    .voting-block_btn {
+                        padding: 10px 32px;
+                        padding: 0 30px;
+                        border-radius: 12px;
+                        font-size: 32px;
+                        font-family: "JollyLodger", sans-serif;
+                        color: #ffffff;
+                        background: rgba(41, 148, 84, 1);
+                        border: none;
+                        cursor: pointer;
+                        transition: all .1s ease;
+
+                        &:hover {
+                            background: rgb(39, 177, 94);
+                        }
+                    }
+
+                    .voting-block_btn.upgrade {
+                        width: 130px;
+                        height: 44px;
+                        padding: 0 30px;
+                        border-radius: 12px;
+                        font-size: 32px;
+                        font-family: "JollyLodger", sans-serif;
+                        color: #ffffff;
+                        background: rgba(41, 148, 84, 1);
+                        border: none;
+                        cursor: pointer;
+                        transition: all .1s ease;
+
+                        &:hover {
+                            background: rgb(39, 177, 94);
+                        }
+                    }
+                }
+
+            }
+
+            .voting-top.create{
+                padding: 0 27px;
+
+                .voting-block_cancel{
+                    padding: 2px 32px;
+                    border-radius: 12px;
+                    font-size: 32px;
+                    font-family: "JollyLodger", sans-serif;
+                    color: #ffffff;
+                    background: #707070;
+                    border: none;
+                    cursor: pointer;
+                    transition: all .1s ease;
+    
+                    &:hover {
+                        background: #979696;
+                    }
+                
+                }
+            }
+
+            .stake-token-center-contain {
+                display: flex;
+                align-items: center;
+                justify-content: space-between;
+                padding: 15px 20px;
+
+                .stake-token_block {
+                    padding: 20px;
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    background: #000000;
+                    width: 500px;
+                    height: 72px;
+                    padding: 12px 24px;
+                    border-radius: 8px;
+
+                    .input-block {
+                        input {
+                            width: 240px;
+                            height: 44px;
+                            background: transparent;
+                            border-bottom: 2px solid #596FE9BF;
+                            border-top: none;
+                            border-left: none;
+                            border-right: none;
+                            font-size: 32px;
+                            color: #ffffff;
+
+                            &:focus {
+                                outline: none;
+                            }
+
+                        }
+
+                        .input-block-balance {
+                            font-family: sans-serif;
+                            text-align: left;
+                            font-size: 16px;
+                            color: #D9D9D9;
+                            cursor: pointer;
+                            margin-top: 5px;
+                        }
+                    }
+
+                    .action-block-btn {
+                        button {
+                            padding: 10px 32px;
+                            padding: 0 30px;
+                            border-radius: 12px;
+                            font-size: 32px;
+                            font-family: "JollyLodger", sans-serif;
+                            color: #ffffff;
+
+                            border: none;
+                            cursor: pointer;
+                            transition: all .1s ease;
+
+
+                        }
+
+                        button.stake {
+                            background: rgba(41, 148, 84, 1);
+
+                            &:hover {
+                                background: rgb(39, 177, 94);
+                            }
+                        }
+
+                        button.unstake {
+                            background: #A03730;
+
+                            &:hover {
+                                background: #c8473e;
+                            }
+                        }
+                    }
+
+
+                }
+            }
+        }
+
+        &-contain {
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            flex-direction: column;
+            height: 390px;
+            overflow-y: auto;
+
+
+            .voting-item {
+                width: 1130px;
+                min-height: auto;
+                margin: 0 0 12px 0;
+                border-radius: 8px;
+                border: 2px;
+                background: #282226;
+                border: 2px solid #443940;
+                text-align: left;
+
+                &_container {
+                    padding: 15px 30px;
+                }
+
+                &_about {
+                    font-size: 20px;
+                    font-weight: 600;
+                    color: #ffffff;
+                    font-family: sans-serif;
+                }
+
+                &_viting-block {
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    font-family: sans-serif;
+
+                    &-left {
+                        .radio-input-block{
+                            margin-top: 20px;
+                            margin-bottom: 10px;
+                            font-size: 20px;
+                     
+
+                            label{
+                                margin-left: 8px;
+                                cursor: pointer;
+                            }
+
+                            label.active{
+                                color: #64F19C;
+                            }
+                        }
+                    }
+
+                    &-right {
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        gap: 20px;
+
+                        .input-block {
+                            input {
+                                width: 240px;
+                                height: 44px;
+                                background: transparent;
+                                border-bottom: 2px solid #596FE9BF;
+                                border-top: none;
+                                border-left: none;
+                                border-right: none;
+                                font-size: 32px;
+                                color: #ffffff;
+    
+                                &:focus {
+                                    outline: none;
+                                }
+    
+                            }
+    
+                            .input-block-balance {
+                                font-family: sans-serif;
+                                text-align: left;
+                                font-size: 16px;
+                                color: #D9D9D9;
+                                cursor: pointer;
+                                margin-top: 5px;
+                            }
+                        }
+
+                        .action-block-btn {
+                            button {
+                                padding: 10px 32px;
+                                padding: 0 30px;
+                                border-radius: 12px;
+                                font-size: 32px;
+                                font-family: "JollyLodger", sans-serif;
+                                color: #ffffff;
+                                border: none;
+                                cursor: pointer;
+                                transition: all .1s ease;
+                                background: rgba(41, 148, 84, 1);
+    
+                                &:hover {
+                                    background: rgb(39, 177, 94);
+                                }
+                            }
+
+                            button.ended{
+                                background: #A03730;
+                                cursor: default;
+                            }
+                        }
+                    }
+                }
+
+                &_info-block{
+                    display: flex;
+                    justify-content: space-between;
+                    align-items: center;
+
+                    &_about{
+                        margin-top: 15px;
+                        display: flex;
+                        flex-direction: column;
+                        gap: 8px;   
+                        color: #D9D9D9;
+                        font-family: sans-serif;
+                        font-size: 16px;
+                    }
+
+                    &_total{
+                        display: flex;
+                        align-items: center;
+                        justify-content: center;
+                        gap: 50px;
+                        font-size: 16px;
+                        font-family: sans-serif;
+                    }
+                }
+            }
+
+
+            .voting-item.create{
+                margin-top: 15px;
+
+              
+            }
+        }
+    }
+
+}
